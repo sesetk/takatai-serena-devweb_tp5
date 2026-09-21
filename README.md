@@ -124,3 +124,4 @@ Les codes HTTP sur le fichier style.css sont :
 - 200 après avoir forcer le rafraîchissement
 
 # Question 2.7
+Oui l'affichage change bien entre le mode -dev et -prod.
