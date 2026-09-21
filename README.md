@@ -54,6 +54,16 @@ Ces commandes ont rajoutées le dossier "node_modules", le fichier "package-lock
 # Question 1.7
 La différence entre http-dev et http-prod est déjà le programme qui lance le serveur, -dev utilise nodemon et -prod utilise node et ensuite -dev redémarre automatiquement dès qu'on modifie le code alors -prod non.
 
+# Question 1.8
+http://localhost:8000/index.html le code renvoyé pour cette route est 200, la page affiche le contenu de index.html.
+
+http://localhost:8000/random.html le code renvoyé pour cette route est 200 la page affiche 64.
+
+http://localhost:8000/ le code renvoyé pour cette route est 404 la page affiche l'erreur 404: not found.
+
+http://localhost:8000/dont-exist le code renvoyé pour cette route est 404 la page affiche l'erreur 404: not found.
+
+
 
 
 
