@@ -116,3 +116,11 @@ Les nouvelles en-têtes des réponses fournies par Express qui sont nouvelles pa
 L'événement listening se déclenche quand le serveur a fini de s'installer à l'emplacement précis qu'on lui a donné et qu'il est maintenant ouvert pour recevoir les connexions des utilisateurs.
 
 # Question 2.5
+L'option qui redirige / vers /index.html est "index".
+
+# Question 2.6 
+Les codes HTTP sur le fichier style.css sont : 
+- 304 avant de forcer le rafrîchissement
+- 200 après avoir forcer le rafraîchissement
+
+# Question 2.7
