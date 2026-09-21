@@ -48,6 +48,12 @@ async function requestListener(_request, response) {
   }
 }
 
+# Question 1.6
+Ces commandes ont rajoutées le dossier "node_modules", le fichier "package-lock.json" et "depencies" dans mon fichier package.json.
+
+# Question 1.7
+La différence entre http-dev et http-prod est déjà le programme qui lance le serveur, -dev utilise nodemon et -prod utilise node et ensuite -dev redémarre automatiquement dès qu'on modifie le code alors -prod non.
+
 
 
 
