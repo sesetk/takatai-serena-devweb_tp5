@@ -65,12 +65,54 @@ http://localhost:8000/dont-exist le code renvoyé pour cette route est 404 la pa
 
 
 
-
-
-
-
 # Partie 2 : Express
 
 # Question 2.1
+express : https://expressjs.com/
+http-errors : https://github.com/jshttp/http-errors
+loglevel : https://github.com/pimterry/loglevel
+morgan : https://github.com/expressjs/morgan
 
-(ta réponse)
+# Question 2.2/2.3
+Les 3 routes fonctionnent.
+
+http://localhost:8000/ affiche la page index.html son status code est 304 et l'en-tête de la réponse http renvoie :
+    accept-ranges: bytes
+    cache-control: public, max-age=0
+    connection: keep-alive
+    date:   Mon, 21 Sep 2026 06:40:32 GMT
+    etag: W/"3ac-1a0c277e8e4"
+    keep-alive: timeout=5
+    last-modified: Mon, 21 Sep 2026 05:37:13 GMT
+    x-powered-by: Express
+
+http://localhost:8000/index.html affiche également la page index.html son status code est 304 et renvoie :
+    accept-ranges: bytes
+    cache-control: public, max-age=0
+    connection: keep-alive
+    date: Mon, 21 Sep 2026 06:40:50 GMT
+    etag: W/"3ac-1a0c277e8e4"
+    keep-alive: timeout=5
+    last-modified: Mon, 21 Sep 2026 05:37:13 GMT
+    x-powered-by: Express
+
+http://localhost:8000/random/5 affiche une page avec une liste de  5 nombres son status code est 200 et renvoie :
+    connection: keep-alive
+    content-length: 80
+    content-type: text/html; charset=utf-8
+    date: Mon, 21 Sep 2026 06:41:09 GMT
+    etag: W/"50-C1mjaTCXfI7/+GRNbM0Tb65q5lI"
+    keep-alive: timeout=5
+    x-powered-by: Express
+
+
+Les nouvelles en-têtes des réponses fournies par Express qui sont nouvelles par rapport au serveur HTTP sont :
+- X-Powered By: Express
+- ETag : W/50-...
+- Content-type: text/html; charset=utf-8
+- Content-Length: 80
+
+# Question 2.4
+L'événement listening se déclenche quand le serveur a fini de s'installer à l'emplacement précis qu'on lui a donné et qu'il est maintenant ouvert pour recevoir les connexions des utilisateurs.
+
+# Question 2.5
